@@ -19,6 +19,7 @@ public class YambaApplication extends Application
 	
 	private OAuthSignpostClient oauthClient;
 	
+	
 	// Log의 태그 설정
 	private static final String TAG = 
 			YambaApplication.class.getSimpleName();
