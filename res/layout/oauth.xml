@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yamba_background">
+    
+    <!-- Title TextView-->
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:gravity="center"
+		android:textSize="30sp"
+		android:layout_margin="10dp" 
+		android:text="@string/titleOAuth"
+		android:textColor="@android:color/white"/>
+	
+	<!-- detail TextView-->
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:gravity="center"
+		android:textSize="20sp"
+		android:layout_margin="10dp" 
+		android:text="@string/detailOAuth"
+		android:textColor="@android:color/white"/>
+
+    <!-- Authorize Button -->
+	<Button 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/authrizeOAuth"
+		android:textSize="20sp" 
+		android:onClick="onClickAuthorize"/>
+
+</LinearLayout>

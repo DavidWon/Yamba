@@ -14,4 +14,10 @@
 	<string name="summaryUsername">Please enter your username</string>
 	<string name="summaryPassword">Please enter your password</string>
 	
+	<!-- OAuth -->
+	<string name="titleOAuth">OAuth Authorize</string>
+	<string name="detailOAuth">twitter 서비스를 이용하기 위해서는 사용자 인증을 해야 합니다.
+	    \n버튼을 누르면 사용자 id와 password를 입력하는 화면이 나옵니다.</string>
+	<string name="authrizeOAuth">인증하기</string>    
+	    
 </resources>

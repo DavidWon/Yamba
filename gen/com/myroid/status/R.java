@@ -21,17 +21,23 @@ public final class R {
         public static final int textCount=0x7f070000;
     }
     public static final class layout {
-        public static final int status=0x7f030000;
+        public static final int oauth=0x7f030000;
+        public static final int status=0x7f030001;
     }
     public static final class menu {
         public static final int menu=0x7f060000;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int authrizeOAuth=0x7f05000b;
         public static final int buttonUpdate=0x7f050003;
+        public static final int detailOAuth=0x7f05000a;
         public static final int hintText=0x7f050002;
         public static final int summaryPassword=0x7f050008;
         public static final int summaryUsername=0x7f050007;
+        /**  OAuth 
+         */
+        public static final int titleOAuth=0x7f050009;
         public static final int titlePassword=0x7f050006;
         /**  추가된 string value 
          */

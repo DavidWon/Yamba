@@ -1,4 +1,6 @@
-package com.myroid.status;
+package com.blogspot.myroid.yamba;
+
+import com.myroid.status.R;
 
 import winterwell.jtwitter.OAuthSignpostClient;
 import winterwell.jtwitter.Twitter;
@@ -9,6 +11,7 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -48,6 +51,20 @@ public class StatusActivity extends Activity implements OnClickListener,
         textCount.setText(Integer.toString(140));
 
         editText.addTextChangedListener(this);    
+        
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+		String token = prefs.getString("token", null);
+		String tokenSecret = prefs.getString("tokenSecret", null);
+		if (token == null || tokenSecret == null) {
+			// 1초 뒤에 인즈을 할 수 있는 Activity로 이동하여 인증을 한다
+			new Handler().postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					// OAuthActivity 화면으로 이동한다
+					startActivity(new Intent(StatusActivity.this, OAuthActivity.class));
+				}
+			}, 1000);
+		}
    	}
 
 	@Override
