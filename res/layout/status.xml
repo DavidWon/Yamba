@@ -32,11 +32,17 @@
 		android:hint="@string/hintText" 
 		android:id="@+id/editText"
 		android:gravity="top|center_horizontal"
-		android:background="#afff"/>
+		android:background="#afff"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
 	
 	<!-- Update Button -->
-	<Button android:layout_width="fill_parent"
-	android:layout_height="wrap_content" android:text="@string/buttonUpdate"
-	android:textSize="20sp" android:id="@+id/buttonUpdate"></Button>
+	<Button 
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="@string/buttonUpdate"
+		android:layout_gravity="center_vertical"
+		android:textSize="20sp" 
+		android:id="@+id/buttonUpdate"/>
 	
 </LinearLayout>

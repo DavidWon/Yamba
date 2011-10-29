@@ -1,13 +1,9 @@
 package com.blogspot.myroid.yamba;
 
-import com.myroid.status.R;
-
-import winterwell.jtwitter.OAuthSignpostClient;
 import winterwell.jtwitter.Twitter;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -145,6 +141,12 @@ public class StatusActivity extends Activity implements OnClickListener,
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
+		case R.id.itemServiceStart:
+			startService(new Intent(this, UpdaterService.class));
+			break;
+		case R.id.itemStopService:
+			stopService(new Intent(this, UpdaterService.class));
+			break;
 		case R.id.itemPrefs:
 			Intent i = new Intent(this, PrefsActivity.class);
 			startActivity(i);

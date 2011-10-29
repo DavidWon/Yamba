@@ -1,7 +1,5 @@
 package com.blogspot.myroid.yamba;
 
-import com.myroid.status.R;
-
 import oauth.signpost.OAuth;
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.OAuthProvider;
@@ -11,7 +9,6 @@ import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
 import oauth.signpost.exception.OAuthNotAuthorizedException;
-import winterwell.jtwitter.OAuthSignpostClient;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -32,7 +29,6 @@ public class OAuthActivity extends Activity {
 	  private static final String OAUTH_CALLBACK_SCHEME = "x-myroid-oauth";
 	  private static final String OAUTH_CALLBACK_URL = OAUTH_CALLBACK_SCHEME + "://callback";
 	  
-	  private OAuthSignpostClient oauthClient;
 	  private OAuthConsumer mConsumer;
 	  private OAuthProvider mProvider;
 	  
