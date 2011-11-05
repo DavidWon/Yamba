@@ -21,6 +21,8 @@
 	<string name="authrizeOAuth">인증하기</string>
 	
 	<string name="titleStartService">Start Service</string>
-	<string name="titleStopService">Stop Service</string>    
+	<string name="titleStopService">Stop Service</string>
+	
+	<string name="titleTimeline">Timeline</string>    
 	    
 </resources>

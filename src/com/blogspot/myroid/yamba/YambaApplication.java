@@ -42,6 +42,8 @@ public class YambaApplication extends Application
 			PreferenceManager.getDefaultSharedPreferences(this);
 		prefs.registerOnSharedPreferenceChangeListener(this);
 				
+		statusData = new StatusData(getApplicationContext());
+		
 		Log.i(TAG, "onCreate");
 	}
 	

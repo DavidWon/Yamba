@@ -12,13 +12,13 @@ public class StatusData {
 
 	private static final String TAG = StatusData.class.getSimpleName();
 	
-	static final int VERSION = 1;
+	static final int VERSION = 2;
 	static final String DATABASE = "timeline.db";
 	static final String TABLE = "timeline";
 	
 	public static final String C_ID = "_id";
-	public static final String C_CREATED_AT = "created_at";
-	public static final String C_TEXT = "txt";
+	public static final String C_CREATED_AT = "create_dt";
+	public static final String C_TEXT = "text";
 	public static final String C_USER = "user";
 	
 	private static final String GET_ALL_ORDER_BY = C_CREATED_AT + " DESC";

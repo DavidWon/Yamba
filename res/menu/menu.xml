@@ -6,11 +6,20 @@
     	android:id="@+id/itemPrefs" 
     	android:icon="@android:drawable/ic_menu_preferences"/>
     <item 
-        android:id="@+id/itemServiceStart" 
-        android:title="@string/titleStartService" 
-        android:icon="@android:drawable/ic_media_play"/>
+   	    android:id="@+id/itemStatus"
+   	    android:title="@string/titleStatus"
+   	    android:icon="@android:drawable/ic_menu_edit"/>
+   	<item 
+   	    android:id="@+id/itemTimeline"
+   	    android:title="@string/titleTimeline"
+   	    android:icon="@android:drawable/ic_menu_sort_by_size"/>
+   	<item 
+   	    android:id="@+id/itemPurge"
+   	    android:title="@string/Purge"
+   	    android:icon="@android:drawable/ic_menu_delete"/>
+   	
     <item 
-        android:id="@+id/itemStopService" 
-        android:title="@string/titleStopService" 
-        android:icon="@android:drawable/ic_media_pause"/>
+        android:id="@+id/itemToggleService"
+        android:title="@string/titleServiceStart"
+        android:icon="@android:drawable/ic_media_play"/>
 </menu>
